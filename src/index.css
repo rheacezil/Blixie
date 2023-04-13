@@ -11,3 +11,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap');
+
+/* Initial Setup */
+:root{
+    /* --lg-font: 'Josefin Sans', serif; */
+    /* --sm-font: 'Poppins', sans-serif;
+    --pink: #e5345b;
+    --primary: #0d6efd;
+    --warning: #ffc107; */
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
