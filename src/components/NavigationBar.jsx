@@ -4,70 +4,59 @@ import { NavLink } from "react-router-dom";
 
 function NavigationBar() {
   return (
-    <Navbar expand="lg" variant="light" className="navbar py-3 fixed-top">
+    <Navbar expand="lg" className="navbar py-4 fixed-top">
       <Container>
         <NavLink
           to="/"
-          className="navbar-brand d-flex align-items-center justify-content-between border-0"
+          className="navbar-brand d-flex align-items-center justify-content-between order-lg-0"
         >
           <img src={"images/blixie-logo-white.png"} alt="Site Icon" />
-          <span
-            id="brand-name"
-            className="text-white text-monospace fw-bold mx-2"
-          >
+          <span id="brand-name" className="text-white fw-bold fs-4 mx-2">
             Blixie
           </span>
         </NavLink>
 
-        <Navbar.Toggle>
+        <div className="nav-btns order-lg-2">
+          <NavLink
+            to="/login"
+            className="btn btn-login bg-dark position-relative mx-3 px-4"
+            type="button"
+          >
+            <span className="nav-btn-label"> LOGIN</span>
+          </NavLink>
+          <NavLink
+            to="/signup"
+            className="btn btn-signup bg-light position-relative"
+            type="button"
+          >
+            <span className="nav-btn-label"> SIGN UP</span>
+          </NavLink>
+        </div>
+
+        <Navbar.Toggle className="border-0">
           <span className="navbar-toggler-icon"></span>
         </Navbar.Toggle>
 
-        <Navbar.Collapse id="navMenu">
-          <ul className="navbar-nav ms-auto text-center">
+        <Navbar.Collapse className="order-lg-1">
+          <ul className="navbar-nav mx-auto text-center">
             <li className="nav-item px-2 py-2">
-              <NavLink
-                to="/"
-                className="btn position-relative border-0"
-                type="button"
-              >
-                <span className="nav-btn-label text-white">HOME</span>
+              <NavLink to="/" className="nav-link text-white">
+                HOME
               </NavLink>
             </li>
             <li className="nav-item px-2 py-2">
-              <NavLink
-                to="/"
-                className="btn position-relative border-0"
-                type="button"
-              >
-                <span className="nav-btn-label text-white">PRICING</span>
+              <NavLink to="/" className="nav-link text-white">
+                PRICING
               </NavLink>
             </li>
             <li className="nav-item px-2 py-2">
-              <NavLink
-                to="/"
-                className="btn position-relative border-0"
-                type="button"
-              >
-                <span className="nav-btn-label text-white">WATCH</span>
+              <NavLink to="/" className="nav-link text-white">
+                WATCH
               </NavLink>
             </li>
             <li className="nav-item px-2 py-2">
-              <NavLink
-                to="/"
-                className="btn position-relative border-0"
-                type="button"
-              >
-                <span className="nav-btn-label text-white">ABOUT</span>
-              </NavLink>
-            </li>
-            <li className="nav-item px-2 py-2">
-              <NavLink
-                to="/"
-                className="btn position-relative bg-white border-white"
-                type="button"
-              >
-                <span className="nav-btn-label text-dark">SIGN UP</span>
+              <NavLink to="/" className="nav-link text-white">
+                ABOUT
               </NavLink>
             </li>
           </ul>

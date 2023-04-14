@@ -2,6 +2,22 @@
 .navbar {
     background-color: #7430F9;
 }
+#brand-name {
+    letter-spacing: 1.2px;
+}
+.nav-btns .btn-login {
+    color: #fff !important;
+}
+.nav-btns .btn-signup {
+    color: var(--theme-purple) !important;
+}
+.nav-btns .btn:hover {
+    background-color: #4F3B78 !important;
+    color: #fff !important;
+}
+/* .nav-btns .btn-signup:hover {
+    background-color: #4F3B78 !important;
+} */
 
 /* Hero */
 #hero h1 {
@@ -10,3 +26,35 @@
     letter-spacing: 1px;
     font-weight: 800;
 }
+
+#hero h2 {
+    color: var(--theme-purple);
+    letter-spacing: 1.5px;
+}
+
+#hero .btn {
+    border-radius: 30px;
+    background-color: #fff;
+    color: black;
+}
+#hero .btn:hover {
+    border-radius: 30px;
+    background-color: var(--theme-purple);
+    color: #fff;
+}
+
+/* Airing Next */
+#airing-next {
+    background-color: #F3E1FF;
+    height: 100%;
+}
+
+#airing-next .title {
+    letter-spacing: 3px;
+}
+
+.card {
+    width: 25em;
+    padding: 0;
+}
+
